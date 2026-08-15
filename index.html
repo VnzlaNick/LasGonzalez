@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Las Gonzalez</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#001f3f",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#0f2023",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<!-- Header Section -->
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="flex items-center p-4 justify-between max-w-md mx-auto de">
+<div class="flex items-center gap-2">
+<div class="bg-primary text-white p-1.5 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">shop</span>
+</div>
+<h1 class="text-primary text-lg font-bold leading-tight tracking-tight">Bodega Las Gonzalez</h1>
+</div>
+<div class="flex gap-3">
+<button class="text-primary p-2 hover:bg-primary/10 rounded-full transition-colors">
+<span class="material-symbols-outlined" <a ref="carro.html">shopping_cart</span>
+</button>
+<button class=r"text-primary p-2 hover:bg-primary/10 rounded-full transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<!-- Search Bar -->
+<div class="px-4 pb-4 max-w-md mx-auto">
+<label class="flex flex-col w-full">
+<div class="flex w-full items-stretch rounded-xl h-12 bg-white dark:bg-slate-800 shadow-sm border border-primary/5">
+<div class="text-primary flex items-center justify-center pl-4">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full border-none bg-transparent focus:ring-0 h-full placeholder:text-slate-400 px-4 text-base font-normal" placeholder="Buscar producto..." value=""/>
+</div>
+</label>
+</div>
+
+
+
+
+<!-- Main Content -->
+<main class="max-w-md mx-auto p-4 pb-24">
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-lg font-bold text-slate-800 dark:text-white">Nuevos productos</h2>
+<a class="text-sm font-semibold text-primary" href="#">Todos</a>
+</div>
+<!-- Product Grid -->
+<div class="grid grid-cols-2 gap-6">
+
+<!-- Product Card 1 -->
+<div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-primary/5 flex flex-col">
+<div class="aspect-square w-full relative group">
+<img alt="Modern Headphones" class="w-full h-full object-cover" data-alt="Modern high-quality over-ear wireless headphones" src="https://img.wpfc.ml/90d/mn/33eebc.jpg"/>
+<span class="absolute top-2 right-2 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">Nuevo</span>
+</div>
+
+<div class="p-3 flex flex-col flex-1">
+<h3  class="text-sm font-medium text-slate-700 dark:text-slate-200 line-clamp-1 mb-1">Glup Cola 2L</h3>
+<p class="text-lg font-bold text-primary mb-3">$2.00</p> 
+
+<a class="mt-auto flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white py-2.5 rounded-lg text-xs font-bold transition-all active:scale-95" href="https://wa.me/+584141619695?text=Quiero comprar Refresco Glup sobres 2L">
+<span class="material-symbols-outlined text-sm">chat</span>
+                        Comprar 
+                    </a>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-white dark:bg-green-800 rounded-xl overflow-hidden shadow-sm border border-primary/5 flex flex-col">
+<div class="aspect-square w-full relative">
+<img alt="Minimalist Watch" class="w-full h-full object-cover" data-alt="Minimalist white and silver analog wristwatch" src="https://img.wpfc.ml/90d/mn/33eoii.jpg"/>
+</div>
+<div class="p-3 flex flex-col flex-1">
+<h3 class="text-sm font-medium text-slate-700 dark:text-slate-200 line-clamp-1 mb-1">Sabores 2L</h3>
+<p class="text-lg font-bold text-primary mb-3">$2.00</p>
+<a class="mt-auto flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white py-2.5 rounded-lg text-xs font-bold transition-all active:scale-95" href="https://wa.me/+584141619695?text=Quiero comprar Refresco Glup sobres 2L">
+<span class="material-symbols-outlined text-sm">chat</span>
+                         Comprar
+                    </a>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-primary/5 flex flex-col">
+<div class="aspect-square w-full relative">
+<img alt="Instax Camera" class="w-full h-full object-cover" data-alt="Teal colored instant film camera" src="https://img.wpfc.ml/90d/mn/33h498.jpg"/>
+</div>
+<div class="p-3 flex flex-col flex-1">
+<h3 class="text-sm font-medium text-slate-700 dark:text-slate-200 line-clamp-1 mb-1">Camera</h3>
+<p class="text-lg font-bold text-primary mb-3">$1.00</p>
+<a class="mt-auto flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white py-2.5 rounded-lg text-xs font-bold transition-all active:scale-95" href="https://wa.me/+584141619695?text=Quiero comprar Refresco Glup 1L">
+<span class="material-symbols-outlined text-sm">chat</span>
+                        Comprar
+                    </a>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-primary/5 flex flex-col">
+<div class="aspect-square w-full relative">
+<img alt="Red Sneakers" class="w-full h-full object-cover" data-alt="Vibrant red athletic running shoes" src="https://img.wpfc.ml/90d/mn/33gjrp.jpg"/>
+</div>
+<div class="p-3 flex flex-col flex-1">
+<h3 class="text-sm font-medium text-slate-700 dark:text-slate-200 line-clamp-1 mb-1">Sabores 1L</h3>
+<p class="text-lg font-bold text-primary mb-3">$1.00</p>
+<a class="mt-auto flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white py-2.5 rounded-lg text-xs font-bold transition-all active:scale-95" href="https://wa.me/+584141619695?text=Quiero comprar Refresco Glup Sabores 1L">
+<span class="material-symbols-outlined text-sm">chat</span>
+                        Comprar
+                    </a>
+</div>
+</div>
+</div>
+
+
+
+
+<!-- Product Card 6 -->
+<div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-primary/5 flex flex-col">
+<div class="aspect-square w-full relative">
+<img alt="Red Sneakers" class="w-full h-full object-cover" data-alt="Vibrant red athletic running shoes" src="https://img.wpfc.ml/90d/mn/33jcbz.png"/>
+</div>
+<div class="p-3 flex flex-col flex-1">
+<h3 class="text-sm font-medium text-slate-700 dark:text-slate-200 line-clamp-1 mb-1">Jugos Justy 1L</h3>
+<p class="text-lg font-bold text-primary mb-3">Bs 1000.00</p>
+<a class="mt-auto flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white py-2.5 rounded-lg text-xs font-bold transition-all active:scale-95" href="https://wa.me/+584141619695?text=Quiero comprar Jugo Justy">
+<span class="material-symbols-outlined text-sm">chat</span>
+                        Comprar
+                    </a>
+</div>
+</div>
+</div>
+
+
+
+<!-- Product Card 5-->
+<div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-primary/5 flex flex-col">
+<div class="aspect-square w-full relative">
+<img alt="Red Sneakers" class="w-full h-full object-cover" data-alt="Vibrant red athletic running shoes" src="https://img.wpfc.ml/90d/mn/33i5wc.jpg"/>
+</div>
+<div class="p-3 flex flex-col flex-1">
+<h3 class="text-sm font-medium text-slate-700 dark:text-slate-200 line-clamp-1 mb-1">Cigarros Universal x Unidad</h3>
+<p class="text-lg font-bold text-primary mb-3">Bs 100.00</p>
+<a class="mt-auto flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white py-2.5 rounded-lg text-xs font-bold transition-all active:scale-95" href="https://wa.me/+584141619695?text=Quiero comprar cigarro Universal">
+<span class="material-symbols-outlined text-sm">chat</span>
+                        Comprar
+                    </a>
+</div>
+</div>
+</div>
+
+
+
+<!-- Product Card 5-->
+<div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-primary/5 flex flex-col">
+<div class="aspect-square w-full relative">
+<img alt="Red Sneakers" class="w-full h-full object-cover" data-alt="Vibrant red athletic running shoes" src="https://img.wpfc.ml/90d/mn/33kgd1.jpg"/>
+</div>
+<div class="p-3 flex flex-col flex-1">
+<h3 class="text-sm font-medium text-slate-700 dark:text-slate-200 line-clamp-1 mb-1">Cigarros Consul x Unidad</h3>
+<p class="text-lg font-bold text-primary mb-3">Bs 80.00</p>
+<a class="mt-auto flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white py-2.5 rounded-lg text-xs font-bold transition-all active:scale-95" href="https://wa.me/+584141619695?text=Quiero comprar cigarro Consul">
+<span class="material-symbols-outlined text-sm">chat</span>
+                        Comprar
+                    </a>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<!-- Promotions Section -->
+<div class="mt-8 mb-4">
+<h2 class="text-lg font-bold text-slate-800 dark:text-white mb-4">Promociones</h2>
+<div class="w-full h-40 rounded-xl bg-gradient-to-r from-primary to-cyan-800 p-6 relative overflow-hidden flex flex-col justify-center">
+<div class="relative z-10">
+<h3 class="text-white text-xl font-bold mb-1">Descuento!</h3>
+<p class="text-white/80 text-sm mb-4">Obtener el 10% de descuento</p>
+<button class="bg-white text-primary px-4 py-2 rounded-lg font-bold text-xs uppercase tracking-wide">Explorar ofertas</button>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-20">
+<span class="material-symbols-outlined text-[120px] text-white">sell</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-900 border-t border-primary/10 pb-safe z-50">
+<div class="flex max-w-md mx-auto h-16">
+
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary 400" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">grid_view</span>
+<span class="text-[10px] font-medium">Off</span>
+</a>
+
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="/cupones.html">
+<span class="material-symbols-outlined">book</span>
+<span class="text-[10px] font-bold">Off</span>
+</a>
+
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="text-[10px] font-medium">Off</span>
+</a>
+
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium">Off</span>
+</a>
+</div>
+</nav>
+
+</body></html>
